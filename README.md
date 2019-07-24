@@ -9,6 +9,7 @@ Reasons why you should use Vertical:
 * Features a unique vertical line prompt
 * Highly configurable
 * Git-aware
+* Shows the status of background jobs
 * Displays the duration of the previous command
 
 This is what it looks like out of the box:
@@ -40,21 +41,6 @@ will be set to the default value.
 | `VERTICAL_NORMAL_COLOR` | normal  | The default color.                   |
 | `VERTICAL_NEWLINE`      | true    | Inserts a newline before the prompt. |
 
-**Prompt**
-
-| Option                       | Default  | Description       |
-|------------------------------|----------|-------------------|
-| `VERTICAL_VERT_PROMPT`       | `" "`    | The prompt text.  |
-| `VERTICAL_VERT_PROMPT_COLOR` | `yellow` | The prompt color. |
-
-**Vertical Bar**
-
-| Option                     | Default | Description                                       |
-|----------------------------|---------|---------------------------------------------------|
-| `VERTICAL_VERT_PREFIX`     | `"│"`   | The prompt vertical bar.                          |
-| `VERTICAL_VERT_COLOR_GOOD` | `green` | The bar color when the previous command succeeds. |
-| `VERTICAL_VERT_COLOR_BAD`  | `red`   | The bar color when the previos command fails.     |
-
 **Directory**
 
 | Option                    | Default       | Description                                                 |
@@ -63,6 +49,15 @@ will be set to the default value.
 | `VERTICAL_DIR_PREFIX`     | `" "`         | The directory name prefix.                                  |
 | `VERTICAL_DIR_TRUNC_GIT`  | `true`        | Shorten directory relative to the root of a git repository. |
 | `VERTICAL_DIR_TRUNC_HOME` | `true`        | Replaces `$HOME` with `~`.                                  |
+
+**Duration**
+
+| Option                     | Default         | Description                                                                            |
+|----------------------------|-----------------|----------------------------------------------------------------------------------------|
+| `VERTICAL_DURATION_COLOR`  | `yellow --bold` | The duration color.                                                                    |
+| `VERTICAL_DURATION_MIN`    | `5000`          | The minimum command duration required to toggle the duration indicator (milliseconds). |
+| `VERTICAL_DURATION_PREFIX` | `" "`           | The text before the duration.                                                          |
+| `VERTICAL_DURATION_SHOW`   | `true`          | Show the duration indicator.                                                           |
 
 **Git**
 
@@ -86,14 +81,29 @@ will be set to the default value.
 | `VERTICAL_GIT_STATUS_SYM_UNMERGED`  | `"="`            | Git unmerged status symbol.    |
 | `VERTICAL_GIT_STATUS_SYM_UNTRACKED` | `"?"`            | Git untracked status symbol.   |
 
-**Duration**
+**Jobs**
 
-| Option                     | Default         | Description                                                                            |
-|----------------------------|-----------------|----------------------------------------------------------------------------------------|
-| `VERTICAL_DURATION_COLOR`  | `yellow --bold` | The duration color.                                                                    |
-| `VERTICAL_DURATION_MIN`    | `5000`          | The minimum command duration required to toggle the duration indicator (milliseconds). |
-| `VERTICAL_DURATION_PREFIX` | `" "`           | The text before the duration.                                                          |
-| `VERTICAL_DURATION_SHOW`   | `true`          | Show the duration indicator.                                                           |
+| Option                 | Default       | Description            |
+|------------------------|---------------|------------------------|
+| `VERTICAL_JOBS_COLOR`  | `cyan --bold` | Jobs indicator color.  |
+| `VERTICAL_JOBS_PREFIX` | `" "`         | Jobs prefix.           |
+| `VERTICAL_JOBS_SHOW`   | `true`        | Show jobs indicator.   |
+| `VERTICAL_JOBS_SYM`    | `"●"`         | Jobs indicator symbol. |
+
+**Prompt**
+
+| Option                       | Default  | Description       |
+|------------------------------|----------|-------------------|
+| `VERTICAL_VERT_PROMPT`       | `" "`    | The prompt text.  |
+| `VERTICAL_VERT_PROMPT_COLOR` | `yellow` | The prompt color. |
+
+**Vertical Bar**
+
+| Option                     | Default | Description                                       |
+|----------------------------|---------|---------------------------------------------------|
+| `VERTICAL_VERT_PREFIX`     | `"│"`   | The prompt vertical bar.                          |
+| `VERTICAL_VERT_COLOR_GOOD` | `green` | The bar color when the previous command succeeds. |
+| `VERTICAL_VERT_COLOR_BAD`  | `red`   | The bar color when the previos command fails.     |
 
 **VI Mode**
 
