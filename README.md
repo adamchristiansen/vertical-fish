@@ -38,7 +38,7 @@ will be set to the default value.
 
 | Option                  | Default | Description                          |
 |-------------------------|---------|--------------------------------------|
-| `VERTICAL_NORMAL_COLOR` | normal  | The default color.                   |
+| `VERTICAL_COLOR_NORMAL` | normal  | The default color.                   |
 | `VERTICAL_NEWLINE`      | true    | Inserts a newline before the prompt. |
 
 **Directory**
@@ -99,11 +99,11 @@ will be set to the default value.
 
 **Vertical Bar**
 
-| Option                     | Default | Description                                       |
-|----------------------------|---------|---------------------------------------------------|
-| `VERTICAL_VERT_PREFIX`     | `"│"`   | The prompt vertical bar.                          |
-| `VERTICAL_VERT_COLOR_GOOD` | `green` | The bar color when the previous command succeeds. |
-| `VERTICAL_VERT_COLOR_BAD`  | `red`   | The bar color when the previos command fails.     |
+| Option                        | Default | Description                                       |
+|-------------------------------|---------|---------------------------------------------------|
+| `VERTICAL_VERT_PREFIX`        | `"│"`   | The prompt vertical bar.                          |
+| `VERTICAL_VERT_COLOR_SUCCESS` | `green` | The bar color when the previous command succeeds. |
+| `VERTICAL_VERT_COLOR_FAILURE` | `red`   | The bar color when the previos command fails.     |
 
 **VI Mode**
 

@@ -1,9 +1,9 @@
 function __vertical_component_jobs -d "Print the jobs indicator"
     # Options
-    __vertical_util_set_default VERTICAL_JOBS_COLOR  cyan --bold
-    __vertical_util_set_default VERTICAL_JOBS_PREFIX " "
-    __vertical_util_set_default VERTICAL_JOBS_SHOW   true
-    __vertical_util_set_default VERTICAL_JOBS_SYM    "●"
+    __vertical_util_set VERTICAL_JOBS_COLOR  cyan --bold
+    __vertical_util_set VERTICAL_JOBS_PREFIX " "
+    __vertical_util_set VERTICAL_JOBS_SHOW   true
+    __vertical_util_set VERTICAL_JOBS_SYM    "●"
 
     [ $VERTICAL_JOBS_SHOW != true ]; and return
 
@@ -12,5 +12,5 @@ function __vertical_component_jobs -d "Print the jobs indicator"
 
     set_color $VERTICAL_JOBS_COLOR
     echo -ens $VERTICAL_JOBS_PREFIX $VERTICAL_JOBS_SYM
-    set_color $VERTICAL_NORMAL_COLOR
+    set_color $VERTICAL_COLOR_NORMAL
 end
