@@ -3,10 +3,10 @@ function fish_prompt
     set -lx __vertical_exit_code $status
 
     # General options
-    __vertical_util_set_default VERTICAL_NORMAL_COLOR normal
-    __vertical_util_set_default VERTICAL_NEWLINE      true
+    __vertical_util_set VERTICAL_COLOR_NORMAL normal
+    __vertical_util_set VERTICAL_NEWLINE      true
 
-    set_color $VERTICAL_NORMAL_COLOR
+    set_color $VERTICAL_COLOR_NORMAL
 
     if [ $VERTICAL_NEWLINE = true ]
         echo

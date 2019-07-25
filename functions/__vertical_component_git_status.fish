@@ -1,21 +1,21 @@
 function __vertical_component_git_status -d "Print the git status"
     # Options
-    __vertical_util_set_default VERTICAL_GIT_STATUS_COLOR         cyan --bold
-    __vertical_util_set_default VERTICAL_GIT_STATUS_PREFIX        " ["
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SHOW          true
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SUFFIX        "]"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_ADDED     "+"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_AHEAD     "↑"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_BEHIND    "↓"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_DIVERGED  "⇵"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_DELETED   "-"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_MODIFIED  "!"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_RENAMED   "»"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_STASHED   "#"
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_UNMERGED  "="
-    __vertical_util_set_default VERTICAL_GIT_STATUS_SYM_UNTRACKED "?"
+    __vertical_util_set VERTICAL_GIT_STATUS_COLOR         cyan --bold
+    __vertical_util_set VERTICAL_GIT_STATUS_PREFIX        " ["
+    __vertical_util_set VERTICAL_GIT_STATUS_SHOW          true
+    __vertical_util_set VERTICAL_GIT_STATUS_SUFFIX        "]"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_ADDED     "+"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_AHEAD     "↑"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_BEHIND    "↓"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_DIVERGED  "⇵"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_DELETED   "-"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_MODIFIED  "!"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_RENAMED   "»"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_STASHED   "#"
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_UNMERGED  "="
+    __vertical_util_set VERTICAL_GIT_STATUS_SYM_UNTRACKED "?"
 
-    not __vertical_util_is_git_dir; and return
+    not __vertical_util_is_git; and return
     [ $VERTICAL_GIT_SHOW != true ]; and return
     [ $VERTICAL_GIT_STATUS_SHOW != true ]; and return
 
@@ -85,6 +85,6 @@ function __vertical_component_git_status -d "Print the git status"
         echo -ens $VERTICAL_GIT_STATUS_PREFIX
         echo -ens $status_syms
         echo -ens $VERTICAL_GIT_STATUS_SUFFIX
-        set_color $VERTICAL_NORMAL_COLOR
+        set_color $VERTICAL_COLOR_NORMAL
     end
 end

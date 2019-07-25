@@ -1,12 +1,12 @@
 function __vertical_component_dir -d "Print the directory"
     # Options
-    __vertical_util_set_default VERTICAL_DIR_COLOR      blue --bold
-    __vertical_util_set_default VERTICAL_DIR_PREFIX     " "
-    __vertical_util_set_default VERTICAL_DIR_TRUNC_GIT  true
-    __vertical_util_set_default VERTICAL_DIR_TRUNC_HOME true
+    __vertical_util_set VERTICAL_DIR_COLOR      blue --bold
+    __vertical_util_set VERTICAL_DIR_PREFIX     " "
+    __vertical_util_set VERTICAL_DIR_TRUNC_GIT  true
+    __vertical_util_set VERTICAL_DIR_TRUNC_HOME true
 
     set -l dir
-    if [ $VERTICAL_DIR_TRUNC_GIT = true ]; and __vertical_util_is_git_dir
+    if [ $VERTICAL_DIR_TRUNC_GIT = true ]; and __vertical_util_is_git
         # Find the current directory with all symlinks resolved
         set dir (pwd -P ^ /dev/null; or pwd)
         # Find the path to the root of the git repository. The idea behind the
@@ -24,5 +24,5 @@ function __vertical_component_dir -d "Print the directory"
 
     set_color $VERTICAL_DIR_COLOR
     echo -ens $VERTICAL_DIR_PREFIX $dir
-    set_color $VERTICAL_NORMAL_COLOR
+    set_color $VERTICAL_COLOR_NORMAL
 end
