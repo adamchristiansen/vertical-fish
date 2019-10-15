@@ -36,10 +36,10 @@ will be set to the default value.
 
 **General**
 
-| Option                  | Default | Description                          |
-|-------------------------|---------|--------------------------------------|
-| `VERTICAL_COLOR_NORMAL` | normal  | The default color.                   |
-| `VERTICAL_NEWLINE`      | true    | Inserts a newline before the prompt. |
+| Option                  | Default   | Description                          |
+|-------------------------|-----------|--------------------------------------|
+| `VERTICAL_COLOR_NORMAL` | `normal`  | The default color.                   |
+| `VERTICAL_NEWLINE`      | `true`    | Inserts a newline before the prompt. |
 
 **Directory**
 
