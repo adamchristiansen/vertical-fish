@@ -10,6 +10,6 @@ function __vertical_component_duration -d "Print the duration of the previous co
 
     echo -ens $VERTICAL_DURATION_PREFIX
     set_color $VERTICAL_DURATION_COLOR
-    echo -ens (echo $CMD_DURATION | humanize_duration)
+    echo -ens (echo $CMD_DURATION | __vertical_util_duration)
     set_color $VERTICAL_COLOR_NORMAL
 end
