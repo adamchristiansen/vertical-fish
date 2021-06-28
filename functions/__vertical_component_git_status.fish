@@ -22,7 +22,7 @@ function __vertical_component_git_status -d "Print the git status"
     # This is a list of statuses that are found
     set -l statuses
     # Get the git status in a format that can be parsed
-    set -l git_status (command git status --porcelain -b ^ /dev/null)
+    set -l git_status (command git status --porcelain -b 2> /dev/null)
     # Get only the first line of the status with the branch information
     set -l git_status_first (string split \n $git_status)[1]
 
@@ -39,7 +39,7 @@ function __vertical_component_git_status -d "Print the git status"
     end
 
     # Check if there are any files stashed
-    [ -n (echo (command git rev-parse --verify refs/stash ^ /dev/null)) ]
+    [ -n (echo (command git rev-parse --verify refs/stash 2> /dev/null)) ]
     and set -a statuses stashed
 
     # Check if the branch is ahead
