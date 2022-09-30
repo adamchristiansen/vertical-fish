@@ -97,6 +97,15 @@ will be set to the default value.
 | `VERTICAL_VERT_PROMPT`       | `" "`    | The prompt text.  |
 | `VERTICAL_VERT_PROMPT_COLOR` | `yellow` | The prompt color. |
 
+**SSH**
+
+| Option                | Default       | Description           |
+|-----------------------|---------------|-----------------------|
+| `VERTICAL_SSH_COLOR`  | `cyan --bold` | SSH indicator color.  |
+| `VERTICAL_SSH_PREFIX` | `" "`         | SSH prefix.           |
+| `VERTICAL_SSH_SHOW`   | `true`        | Show SSH indicator.   |
+| `VERTICAL_SSH_SYM`    | `"▲"`         | SSH indicator symbol. |
+
 **Vertical Bar**
 
 | Option                        | Default | Description                                       |

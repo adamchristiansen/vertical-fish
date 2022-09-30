@@ -29,12 +29,12 @@ function __vertical_component_git_status -d "Print the git status"
     # Check the status of each file
     for i in (string split \n $git_status | string sub -s 1 -l 2)
         switch $i
-            case '*\?*'; set -a statuses untracked
             case '*A*';  set -a statuses added
+            case '*D*';  set -a statuses deleted
             case '*M*';  set -a statuses modified
             case '*R*';  set -a statuses renamed
-            case '*D*';  set -a statuses deleted
             case '*U*';  set -a statuses unmerged
+            case '*\?*'; set -a statuses untracked
         end
     end
 
