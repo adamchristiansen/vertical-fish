@@ -10,6 +10,7 @@ Reasons why you should use Vertical:
 * Highly configurable
 * Git-aware
 * Shows the status of background jobs
+* Indicates when running over SSH
 * Displays the duration of the previous command
 
 This is what it looks like out of the box:
@@ -25,7 +26,7 @@ This is what it looks like out of the box:
 ### Using [Fisher](https://github.com/jorgebucaran/fisher)
 
 ```sh
-fisher install AdamChristiansen/vertical-fish
+fisher install adamchristiansen/vertical-fish
 ```
 
 ## Configuration
