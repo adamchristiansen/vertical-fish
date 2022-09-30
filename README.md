@@ -71,10 +71,10 @@ will be set to the default value.
 | `VERTICAL_GIT_STATUS_SHOW`          | `true`           | Show the git status indicator. |
 | `VERTICAL_GIT_STATUS_SUFFIX`        | `"]"`            | Git status suffix.             |
 | `VERTICAL_GIT_STATUS_SYM_ADDED`     | `"+"`            | Git added status symbol.       |
-| `VERTICAL_GIT_STATUS_SYM_AHEAD`     | `"↑"`            | Git ahead status symbol.       |
-| `VERTICAL_GIT_STATUS_SYM_BEHIND`    | `"↓"`            | Git behind status symbol.      |
-| `VERTICAL_GIT_STATUS_SYM_DIVERGED`  | `"⇵"`            | Git diverged status symbol.    |
-| `VERTICAL_GIT_STATUS_SYM_DELETED`   | `"-"`            | Git deleted status symbol.     |
+| `VERTICAL_GIT_STATUS_SYM_AHEAD`     | `"↑"`            | Git ahead status sy            |
+| `VERTICAL_GIT_STATUS_SYM_BEHIND`    | `"↓"`            | Git behind stymbol.            |
+| `VERTICAL_GIT_STATUS_SYM_DIVERGED`  | `"⇵"`            | Git divstatus symbol.          |
+| `VERTICAL_GIT_STATUS_SYM_DELETED`   | `"-"`            | Geted status symbol.           |
 | `VERTICAL_GIT_STATUS_SYM_MODIFIED`  | `"!"`            | Git modified status symbol.    |
 | `VERTICAL_GIT_STATUS_SYM_RENAMED`   | `"»"`            | Git renamed status symbol.     |
 | `VERTICAL_GIT_STATUS_SYM_STASHED`   | `"#"`            | Git stashed status symbol.     |
