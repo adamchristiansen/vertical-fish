@@ -2,9 +2,9 @@ function __vertical_component_vi_mode -d "Print the VI mode indicator"
   __vertical_util_set VERTICAL_VI_MODE_COLOR           yellow --bold
   __vertical_util_set VERTICAL_VI_MODE_SHOW            true
   __vertical_util_set VERTICAL_VI_MODE_SYM_INSERT      ""
-  __vertical_util_set VERTICAL_VI_MODE_SYM_NORMAL      "[N] "
-  __vertical_util_set VERTICAL_VI_MODE_SYM_REPLACE_ONE "[R] "
-  __vertical_util_set VERTICAL_VI_MODE_SYM_VISUAL      "[V] "
+  __vertical_util_set VERTICAL_VI_MODE_SYM_NORMAL      " [N]"
+  __vertical_util_set VERTICAL_VI_MODE_SYM_REPLACE_ONE " [R]"
+  __vertical_util_set VERTICAL_VI_MODE_SYM_VISUAL      " [V]"
 
   if [ $VERTICAL_VI_MODE_SHOW != true ]
     return

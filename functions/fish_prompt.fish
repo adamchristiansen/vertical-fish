@@ -17,8 +17,8 @@ function fish_prompt
   __vertical_component_git_branch
   __vertical_component_git_status
   __vertical_component_duration
+  __vertical_component_vi_mode
   echo
   __vertical_component_vert
   __vertical_component_prompt
-  __vertical_component_vi_mode
 end
