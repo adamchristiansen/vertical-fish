@@ -122,6 +122,6 @@ will be set to the default value.
 | `VERTICAL_VI_MODE_COLOR`           | `yellow --bold` | VI mode color.                          |
 | `VERTICAL_VI_MODE_SHOW`            | `true`          | Show VI mode indicators.                |
 | `VERTICAL_VI_MODE_SYM_INSERT`      | `""`            | The symbol to show in insert mode.      |
-| `VERTICAL_VI_MODE_SYM_NORMAL`      | `"[N] "`        | The symbol to show in normal mode.      |
-| `VERTICAL_VI_MODE_SYM_REPLACE_ONE` | `"[R] "`        | The symbol to show in replace one mode. |
-| `VERTICAL_VI_MODE_SYM_VISUAL`      | `"[V] "`        | The symbol to show in visual mode.      |
+| `VERTICAL_VI_MODE_SYM_NORMAL`      | `" [N]"`        | The symbol to show in normal mode.      |
+| `VERTICAL_VI_MODE_SYM_REPLACE_ONE` | `" [R]"`        | The symbol to show in replace one mode. |
+| `VERTICAL_VI_MODE_SYM_VISUAL`      | `" [V]"`        | The symbol to show in visual mode.      |
