@@ -20,6 +20,7 @@ This is what it looks like out of the box:
 ## Requirements
 
 * [fish](https://github.com/fish-shell/fish-shell) (v3.0.0 or higher)
+* [git](https://git-scm.com) (optional, for git integration)
 
 ## Installation
 
