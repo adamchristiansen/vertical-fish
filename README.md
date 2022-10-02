@@ -43,6 +43,13 @@ will be set to the default value.
 | `VERTICAL_COLOR_NORMAL` | `normal`  | The default color.                   |
 | `VERTICAL_NEWLINE`      | `true`    | Inserts a newline before the prompt. |
 
+**Cue**
+
+| Option                    | Default  | Description    |
+|---------------------------|----------|----------------|
+| `VERTICAL_VERT_CUE`       | `" "`    | The cue text.  |
+| `VERTICAL_VERT_CUE_COLOR` | `normal` | The cue color. |
+
 **Directory**
 
 | Option                    | Default       | Description                                                 |
@@ -91,13 +98,6 @@ will be set to the default value.
 | `VERTICAL_JOBS_PREFIX` | `" "`         | Jobs prefix.           |
 | `VERTICAL_JOBS_SHOW`   | `true`        | Show jobs indicator.   |
 | `VERTICAL_JOBS_SYM`    | `"●"`         | Jobs indicator symbol. |
-
-**Prompt**
-
-| Option                       | Default  | Description       |
-|------------------------------|----------|-------------------|
-| `VERTICAL_VERT_PROMPT`       | `" "`    | The prompt text.  |
-| `VERTICAL_VERT_PROMPT_COLOR` | `yellow` | The prompt color. |
 
 **SSH**
 
