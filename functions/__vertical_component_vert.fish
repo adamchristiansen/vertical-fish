@@ -1,4 +1,4 @@
-function __vertical_component_vert -d "Print the vertical bar"
+function __vertical_component_vert
   __vertical_util_set VERTICAL_VERT_PREFIX        "│"
   __vertical_util_set VERTICAL_VERT_COLOR_SUCCESS green
   __vertical_util_set VERTICAL_VERT_COLOR_FAILURE red

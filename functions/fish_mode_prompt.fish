@@ -1,3 +1,3 @@
 function fish_mode_prompt
-  # This is intentionally empty as part of vertical-fish
+  # This is intentionally empty as part of the vertical prompt
 end

@@ -1,4 +1,4 @@
-function __vertical_component_prompt -d "Print the prompt"
+function __vertical_component_prompt
   __vertical_util_set VERTICAL_VERT_PROMPT       " "
   __vertical_util_set VERTICAL_VERT_PROMPT_COLOR yellow
 
