@@ -1,4 +1,4 @@
-function __vertical_component_ssh -d "Print the SSH indicator"
+function __vertical_component_ssh
   __vertical_util_set VERTICAL_SSH_COLOR  cyan --bold
   __vertical_util_set VERTICAL_SSH_PREFIX " "
   __vertical_util_set VERTICAL_SSH_SHOW   true

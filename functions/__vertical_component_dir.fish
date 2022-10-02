@@ -1,4 +1,4 @@
-function __vertical_component_dir -d "Print the directory"
+function __vertical_component_dir
   __vertical_util_set VERTICAL_DIR_COLOR      blue --bold
   __vertical_util_set VERTICAL_DIR_PREFIX     " "
   __vertical_util_set VERTICAL_DIR_TRUNC_GIT  true

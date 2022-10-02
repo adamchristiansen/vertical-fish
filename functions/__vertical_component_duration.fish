@@ -1,4 +1,4 @@
-function __vertical_component_duration -d "Print the duration of the previous command"
+function __vertical_component_duration
   __vertical_util_set VERTICAL_DURATION_COLOR  yellow --bold
   __vertical_util_set VERTICAL_DURATION_MIN    5000
   __vertical_util_set VERTICAL_DURATION_PREFIX " "
