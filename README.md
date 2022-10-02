@@ -47,7 +47,7 @@ will be set to the default value.
 
 | Option                    | Default  | Description    |
 |---------------------------|----------|----------------|
-| `VERTICAL_VERT_CUE`       | `" "`    | The cue text.  |
+| `VERTICAL_VERT_CUE`       | `' '`    | The cue text.  |
 | `VERTICAL_VERT_CUE_COLOR` | `normal` | The cue color. |
 
 **Directory**
@@ -55,7 +55,7 @@ will be set to the default value.
 | Option                    | Default       | Description                                                 |
 |---------------------------|---------------|-------------------------------------------------------------|
 | `VERTICAL_DIR_COLOR`      | `blue --bold` | The directory name color.                                   |
-| `VERTICAL_DIR_PREFIX`     | `" "`         | The directory name prefix.                                  |
+| `VERTICAL_DIR_PREFIX`     | `' '`         | The directory name prefix.                                  |
 | `VERTICAL_DIR_TRUNC_GIT`  | `true`        | Shorten directory relative to the root of a git repository. |
 | `VERTICAL_DIR_TRUNC_HOME` | `true`        | Replaces `$HOME` with `~`.                                  |
 
@@ -65,7 +65,7 @@ will be set to the default value.
 |----------------------------|-----------------|----------------------------------------------------------------------------------------|
 | `VERTICAL_DURATION_COLOR`  | `yellow --bold` | The duration color.                                                                    |
 | `VERTICAL_DURATION_MIN`    | `5000`          | The minimum command duration required to toggle the duration indicator (milliseconds). |
-| `VERTICAL_DURATION_PREFIX` | `" "`           | The text before the duration.                                                          |
+| `VERTICAL_DURATION_PREFIX` | `' '`           | The text before the duration.                                                          |
 | `VERTICAL_DURATION_SHOW`   | `true`          | Show the duration indicator.                                                           |
 
 **Git**
@@ -73,46 +73,46 @@ will be set to the default value.
 | Option                              | Default          | Description                    |
 |-------------------------------------|------------------|--------------------------------|
 | `VERTICAL_GIT_BRANCH_COLOR`         | `magenta --bold` | Git branch color.              |
-| `VERTICAL_GIT_BRANCH_PREFIX`        | `" "`            | Git branch prefix.             |
+| `VERTICAL_GIT_BRANCH_PREFIX`        | `' '`            | Git branch prefix.             |
 | `VERTICAL_GIT_SHOW`                 | `true`           | Show git indicator.            |
 | `VERTICAL_GIT_STATUS_COLOR`         | `cyan --bold`    | Git status color.              |
-| `VERTICAL_GIT_STATUS_PREFIX`        | `" ["`           | Git status prefix.             |
+| `VERTICAL_GIT_STATUS_PREFIX`        | `' ['`           | Git status prefix.             |
 | `VERTICAL_GIT_STATUS_SHOW`          | `true`           | Show the git status indicator. |
-| `VERTICAL_GIT_STATUS_SUFFIX`        | `"]"`            | Git status suffix.             |
-| `VERTICAL_GIT_STATUS_SYM_ADDED`     | `"+"`            | Git added status symbol.       |
-| `VERTICAL_GIT_STATUS_SYM_AHEAD`     | `"↑"`            | Git ahead status sy            |
-| `VERTICAL_GIT_STATUS_SYM_BEHIND`    | `"↓"`            | Git behind stymbol.            |
-| `VERTICAL_GIT_STATUS_SYM_DIVERGED`  | `"⇵"`            | Git divstatus symbol.          |
-| `VERTICAL_GIT_STATUS_SYM_DELETED`   | `"-"`            | Geted status symbol.           |
-| `VERTICAL_GIT_STATUS_SYM_MODIFIED`  | `"!"`            | Git modified status symbol.    |
-| `VERTICAL_GIT_STATUS_SYM_RENAMED`   | `"»"`            | Git renamed status symbol.     |
-| `VERTICAL_GIT_STATUS_SYM_STASHED`   | `"#"`            | Git stashed status symbol.     |
-| `VERTICAL_GIT_STATUS_SYM_UNMERGED`  | `"="`            | Git unmerged status symbol.    |
-| `VERTICAL_GIT_STATUS_SYM_UNTRACKED` | `"?"`            | Git untracked status symbol.   |
+| `VERTICAL_GIT_STATUS_SUFFIX`        | `]`              | Git status suffix.             |
+| `VERTICAL_GIT_STATUS_SYM_ADDED`     | `+`              | Git added status symbol.       |
+| `VERTICAL_GIT_STATUS_SYM_AHEAD`     | `↑`              | Git ahead status sy            |
+| `VERTICAL_GIT_STATUS_SYM_BEHIND`    | `↓`              | Git behind stymbol.            |
+| `VERTICAL_GIT_STATUS_SYM_DIVERGED`  | `⇵`              | Git divstatus symbol.          |
+| `VERTICAL_GIT_STATUS_SYM_DELETED`   | `-`              | Geted status symbol.           |
+| `VERTICAL_GIT_STATUS_SYM_MODIFIED`  | `!`              | Git modified status symbol.    |
+| `VERTICAL_GIT_STATUS_SYM_RENAMED`   | `»`              | Git renamed status symbol.     |
+| `VERTICAL_GIT_STATUS_SYM_STASHED`   | `#`              | Git stashed status symbol.     |
+| `VERTICAL_GIT_STATUS_SYM_UNMERGED`  | `=`              | Git unmerged status symbol.    |
+| `VERTICAL_GIT_STATUS_SYM_UNTRACKED` | `?`              | Git untracked status symbol.   |
 
 **Jobs**
 
 | Option                 | Default       | Description            |
 |------------------------|---------------|------------------------|
 | `VERTICAL_JOBS_COLOR`  | `cyan --bold` | Jobs indicator color.  |
-| `VERTICAL_JOBS_PREFIX` | `" "`         | Jobs prefix.           |
+| `VERTICAL_JOBS_PREFIX` | `' '`         | Jobs prefix.           |
 | `VERTICAL_JOBS_SHOW`   | `true`        | Show jobs indicator.   |
-| `VERTICAL_JOBS_SYM`    | `"●"`         | Jobs indicator symbol. |
+| `VERTICAL_JOBS_SYM`    | `'●'`         | Jobs indicator symbol. |
 
 **SSH**
 
 | Option                | Default       | Description           |
 |-----------------------|---------------|-----------------------|
 | `VERTICAL_SSH_COLOR`  | `cyan --bold` | SSH indicator color.  |
-| `VERTICAL_SSH_PREFIX` | `" "`         | SSH prefix.           |
+| `VERTICAL_SSH_PREFIX` | `' '`         | SSH prefix.           |
 | `VERTICAL_SSH_SHOW`   | `true`        | Show SSH indicator.   |
-| `VERTICAL_SSH_SYM`    | `"▲"`         | SSH indicator symbol. |
+| `VERTICAL_SSH_SYM`    | `'▲'`         | SSH indicator symbol. |
 
 **Vertical Bar**
 
 | Option                        | Default | Description                                       |
 |-------------------------------|---------|---------------------------------------------------|
-| `VERTICAL_VERT_PREFIX`        | `"│"`   | The prompt vertical bar.                          |
+| `VERTICAL_VERT_PREFIX`        | `│`     | The prompt vertical bar.                          |
 | `VERTICAL_VERT_COLOR_SUCCESS` | `green` | The bar color when the previous command succeeds. |
 | `VERTICAL_VERT_COLOR_FAILURE` | `red`   | The bar color when the previos command fails.     |
 
@@ -122,7 +122,7 @@ will be set to the default value.
 |------------------------------------|-----------------|-----------------------------------------|
 | `VERTICAL_VI_MODE_COLOR`           | `yellow --bold` | VI mode color.                          |
 | `VERTICAL_VI_MODE_SHOW`            | `true`          | Show VI mode indicators.                |
-| `VERTICAL_VI_MODE_SYM_INSERT`      | `""`            | The symbol to show in insert mode.      |
-| `VERTICAL_VI_MODE_SYM_NORMAL`      | `" [N]"`        | The symbol to show in normal mode.      |
-| `VERTICAL_VI_MODE_SYM_REPLACE_ONE` | `" [R]"`        | The symbol to show in replace one mode. |
-| `VERTICAL_VI_MODE_SYM_VISUAL`      | `" [V]"`        | The symbol to show in visual mode.      |
+| `VERTICAL_VI_MODE_SYM_INSERT`      | `''`            | The symbol to show in insert mode.      |
+| `VERTICAL_VI_MODE_SYM_NORMAL`      | `' [N]'`        | The symbol to show in normal mode.      |
+| `VERTICAL_VI_MODE_SYM_REPLACE_ONE` | `' [R]'`        | The symbol to show in replace one mode. |
+| `VERTICAL_VI_MODE_SYM_VISUAL`      | `' [V]'`        | The symbol to show in visual mode.      |

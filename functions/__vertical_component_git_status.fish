@@ -1,18 +1,18 @@
 function __vertical_component_git_status
   __vertical_util_set VERTICAL_GIT_STATUS_COLOR         cyan --bold
-  __vertical_util_set VERTICAL_GIT_STATUS_PREFIX        " ["
+  __vertical_util_set VERTICAL_GIT_STATUS_PREFIX        ' ['
   __vertical_util_set VERTICAL_GIT_STATUS_SHOW          true
-  __vertical_util_set VERTICAL_GIT_STATUS_SUFFIX        "]"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_ADDED     "+"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_AHEAD     "↑"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_BEHIND    "↓"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_DIVERGED  "⇵"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_DELETED   "-"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_MODIFIED  "!"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_RENAMED   "»"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_STASHED   "#"
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_UNMERGED  "="
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_UNTRACKED "?"
+  __vertical_util_set VERTICAL_GIT_STATUS_SUFFIX        ']'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_ADDED     '+'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_AHEAD     '↑'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_BEHIND    '↓'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_DIVERGED  '⇵'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_DELETED   '-'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_MODIFIED  '!'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_RENAMED   '»'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_STASHED   '#'
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_UNMERGED  '='
+  __vertical_util_set VERTICAL_GIT_STATUS_SYM_UNTRACKED '?'
 
   if not __vertical_util_is_git
     return

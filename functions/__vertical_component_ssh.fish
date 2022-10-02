@@ -1,8 +1,8 @@
 function __vertical_component_ssh
   __vertical_util_set VERTICAL_SSH_COLOR  cyan --bold
-  __vertical_util_set VERTICAL_SSH_PREFIX " "
+  __vertical_util_set VERTICAL_SSH_PREFIX ' '
   __vertical_util_set VERTICAL_SSH_SHOW   true
-  __vertical_util_set VERTICAL_SSH_SYM    "▼"
+  __vertical_util_set VERTICAL_SSH_SYM    '▼'
 
   if [ $VERTICAL_SSH_SHOW != true ]
     return
