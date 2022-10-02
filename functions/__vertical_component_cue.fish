@@ -1,5 +1,5 @@
 function __vertical_component_cue
-  __vertical_util_set VERTICAL_VERT_CUE       " "
+  __vertical_util_set VERTICAL_VERT_CUE       ' '
   __vertical_util_set VERTICAL_VERT_CUE_COLOR normal
 
   set_color $VERTICAL_VERT_CUE_COLOR

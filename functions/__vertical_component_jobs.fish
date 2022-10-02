@@ -1,8 +1,8 @@
 function __vertical_component_jobs
   __vertical_util_set VERTICAL_JOBS_COLOR  cyan --bold
-  __vertical_util_set VERTICAL_JOBS_PREFIX " "
+  __vertical_util_set VERTICAL_JOBS_PREFIX ' '
   __vertical_util_set VERTICAL_JOBS_SHOW   true
-  __vertical_util_set VERTICAL_JOBS_SYM    "●"
+  __vertical_util_set VERTICAL_JOBS_SYM    '●'
 
   if [ $VERTICAL_JOBS_SHOW != true ]
     return

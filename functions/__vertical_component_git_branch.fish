@@ -1,6 +1,6 @@
 function __vertical_component_git_branch
   __vertical_util_set VERTICAL_GIT_BRANCH_COLOR  magenta --bold
-  __vertical_util_set VERTICAL_GIT_BRANCH_PREFIX " "
+  __vertical_util_set VERTICAL_GIT_BRANCH_PREFIX ' '
   __vertical_util_set VERTICAL_GIT_SHOW          true
 
   if not __vertical_util_is_git
