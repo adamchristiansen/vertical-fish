@@ -2,7 +2,6 @@ function __vertical_component_git_status
   __vertical_util_set vertical_git_status_color         cyan --bold
   __vertical_util_set vertical_git_status_prefix        ' ['
   __vertical_util_set vertical_git_status_prefix_color  cyan --bold
-  __vertical_util_set vertical_git_status_show          true
   __vertical_util_set vertical_git_status_suffix        ]
   __vertical_util_set vertical_git_status_suffix_color  cyan --bold
   __vertical_util_set vertical_git_status_sym_added     +
@@ -17,10 +16,6 @@ function __vertical_component_git_status
   __vertical_util_set vertical_git_status_sym_untracked '?'
 
   if not __vertical_util_is_git
-    return
-  end
-
-  if [ $vertical_git_show != true -o $vertical_git_status_show != true ]
     return
   end
 

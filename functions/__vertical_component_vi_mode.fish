@@ -2,15 +2,10 @@ function __vertical_component_vi_mode
   __vertical_util_set vertical_vi_mode_color           yellow --bold
   __vertical_util_set vertical_vi_mode_prefix          ''
   __vertical_util_set vertical_vi_mode_prefix_color    yellow --bold
-  __vertical_util_set vertical_vi_mode_show            true
   __vertical_util_set vertical_vi_mode_sym_insert      ''
   __vertical_util_set vertical_vi_mode_sym_normal      ' (N)'
   __vertical_util_set vertical_vi_mode_sym_replace_one ' (R)'
   __vertical_util_set vertical_vi_mode_sym_visual      ' (V)'
-
-  if [ $vertical_vi_mode_show != true ]
-    return
-  end
 
   if [ "$fish_key_bindings" != 'fish_vi_key_bindings' \
       -a "$fish_key_bindings" != 'fish_hybrid_key_bindings' ]
