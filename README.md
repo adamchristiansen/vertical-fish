@@ -1,27 +1,27 @@
 # Vertical
 
 A clean and git-aware prompt for the
-[fish shell](https://github.com/fish-shell/fish-shell) with a definitive
-vertical line.
-
-Reasons why you should use Vertical:
-
-* Features a unique vertical line prompt
-* Highly configurable
-* Git-aware
-* Shows the status of background jobs
-* Indicates when running over SSH
-* User and host names
-* Displays the duration of the previous command
-
-This is what it looks like out of the box:
+[fish shell](https://github.com/fish-shell/fish-shell) with a distinct vertical
+line.
 
 ![Screenshot](.image/screenshot.png?raw=true)
 
+## Features
+
+* Unique vertical line prompt
+* Git-aware
+* Background job status
+* User and host names
+* Previous command duration
+
+
+
 ## Requirements
 
-* [fish](https://github.com/fish-shell/fish-shell) (v3.0.0 or higher)
+* [fish](https://github.com/fish-shell/fish-shell) (3.0.0 or higher)
 * [git](https://git-scm.com) (optional, for git integration)
+
+
 
 ## Installation
 
@@ -31,25 +31,27 @@ This is what it looks like out of the box:
 fisher install adamchristiansen/vertical-fish
 ```
 
+
+
 ## Configuration
 
 The following options can be overridden by setting the variable. This only
 needs to be done once, as universal variables are used for all configuration
 options.
 
-> **Note**: The `vertical_clear_configuration` command can be used to clear all
-> universal variables. They are reset to their default values the next time
-> that the prompt is run. This affects only universal variables, so any set
-> global variables will still be used.
+The `vertical_clear_configuration` command can be used to clear all universal
+variables. They are reset to their default values the next time that the prompt
+is run. This affects only universal variables, so any set global variables will
+still be used.
 
-**General**
+### General
 
 | Option             | Default                                                     | Description                        |
 |--------------------|-------------------------------------------------------------|------------------------------------|
 | `vertical_newline` | `true`                                                      | Insert a newline before the prompt |
 | `vertical_order`   | `jobs user host dir git_branch git_status duration vi_mode` | Order to display components        |
 
-**Cue**
+### Cue
 
 The cue is displayed immediately before where the user types.
 
@@ -58,7 +60,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_vert_cue`       | `' '`    | Cue text    |
 | `vertical_vert_cue_color` | `normal` | Cue color   |
 
-**Directory**
+### Directory
 
 | Option                      | Default       | Description                                  |
 |-----------------------------|---------------|----------------------------------------------|
@@ -68,7 +70,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_dir_trunc_git`    | `true`        | Shorten directory relative to git repository |
 | `vertical_dir_trunc_home`   | `true`        | Replace `$HOME` with `~`                     |
 
-**Duration**
+### Duration
 
 | Option                           | Default         | Description                             |
 |----------------------------------|-----------------|-----------------------------------------|
@@ -77,7 +79,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_duration_prefix`       | `' '`           | Duration prefix                         |
 | `vertical_duration_prefix_color` | `yellow --bold` | Duration prefix color                   |
 
-**Git Branch**
+### Git Branch
 
 | Option                             | Default          | Description             |
 |------------------------------------|------------------|-------------------------|
@@ -85,7 +87,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_git_branch_prefix`       | `' '`            | Git branch prefix       |
 | `vertical_git_branch_prefix_color` | `magenta --bold` | Git branch prefix color |
 
-**Git Status**
+### Git Status
 
 | Option                                  | Default       | Description                         |
 |-----------------------------------------|---------------|-------------------------------------|
@@ -106,7 +108,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_git_status_sym_unmerged`      | `=`           | Git unmerged status symbol          |
 | `vertical_git_status_sym_untracked`     | `?`           | Git untracked status symbol         |
 
-**Host**
+### Host
 
 | Option                       | Default         | Description        |
 |------------------------------|-----------------|--------------------|
@@ -115,7 +117,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_host_prefix_color` | `yellow --bold` | Host prefix color  |
 | `vertical_host_ssh_only`     | `true`          | Show only over SSH |
 
-**Jobs**
+### Jobs
 
 | Option                       | Default       | Description       |
 |------------------------------|---------------|-------------------|
@@ -124,7 +126,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_jobs_prefix_color` | `cyan --bold` | Jobs prefix color |
 | `vertical_jobs_sym`          | `●`           | Jobs symbol       |
 
-**User**
+### User
 
 | Option                   | Default         | Description        |
 |--------------------------|-----------------|--------------------|
@@ -133,7 +135,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_user_prefix`   | `yellow --bold` | User prefix color  |
 | `vertical_user_ssh_only` | `true`          | Show only over SSH |
 
-**Vertical Bar**
+### Vertical Bar
 
 | Option                        | Default | Description                                       |
 |-------------------------------|---------|---------------------------------------------------|
@@ -142,7 +144,7 @@ The cue is displayed immediately before where the user types.
 | `vertical_vert_color_failure` | `red`   | Vertical color when the previous command fails    |
 | `vertical_vert_top`           | `│`     | Vertical top symbol                               |
 
-**VI Mode**
+### VI Mode
 
 | Option                             | Default         | Description                |
 |------------------------------------|-----------------|----------------------------|
