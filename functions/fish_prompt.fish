@@ -3,6 +3,9 @@ function fish_prompt
 
   __vertical_util_set vertical_color_normal normal
   __vertical_util_set vertical_newline      true
+  __vertical_util_set vertical_order        jobs ssh user host dir \
+                                            git_branch git_status duration \
+                                            vi_mode
 
   set_color $vertical_color_normal
 
@@ -11,15 +14,9 @@ function fish_prompt
   end
 
   __vertical_component_vert
-  __vertical_component_jobs
-  __vertical_component_ssh
-  __vertical_component_user
-  __vertical_component_host
-  __vertical_component_dir
-  __vertical_component_git_branch
-  __vertical_component_git_status
-  __vertical_component_duration
-  __vertical_component_vi_mode
+  for component in $vertical_order
+    eval __vertical_component_$component
+  end
   echo
   __vertical_component_vert
   __vertical_component_cue
