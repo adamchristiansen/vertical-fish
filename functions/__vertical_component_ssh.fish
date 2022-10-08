@@ -8,7 +8,7 @@ function __vertical_component_ssh
     return
   end
 
-  if not set -q SSH_CLIENT && not set -q SSH_CONNECTION && not set -q SSH_TTY
+  if not __vertical_util_is_ssh
     return
   end
 
