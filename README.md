@@ -37,7 +37,7 @@ The following options can be overridden by setting the variable. This only
 needs to be done once, as universal variables are used for all configuration
 options.
 
-> **Note**: The `vertical_reset_configuration` command can be used to clear all
+> **Note**: The `vertical_clear_configuration` command can be used to clear all
 > universal variables. They are reset to their default values the next time
 > that the prompt is run. This affects only universal variables, so any set
 > global variables will still be used.
