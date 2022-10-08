@@ -38,10 +38,11 @@ options.
 
 **General**
 
-| Option                  | Default   | Description                          |
-|-------------------------|-----------|--------------------------------------|
-| `vertical_color_normal` | `normal`  | The default color.                   |
-| `vertical_newline`      | `true`    | Inserts a newline before the prompt. |
+| Option                  | Default                                                         | Description                          |
+|-------------------------|-----------------------------------------------------------------|--------------------------------------|
+| `vertical_color_normal` | `normal`                                                        | The default color.                   |
+| `vertical_newline`      | `true`                                                          | Inserts a newline before the prompt. |
+| `vertical_order`        | `jobs ssh user host dir git_branch git_status duration vi_mode` | Order to display components. |
 
 **Cue**
 
@@ -95,7 +96,7 @@ options.
 | Option                 | Default         | Description                            |
 |------------------------|-----------------|----------------------------------------|
 | `vertical_host_color`  | `yellow --bold` | Host indicator color.                  |
-| `vertical_host_prefix` | `'@'`           | Host prefix.                           |
+| `vertical_host_prefix` | `@`             | Host prefix.                           |
 | `vertical_host_show`   | `true`          | Show host (`true`, `false`, or `ssh`). |
 
 **Jobs**
