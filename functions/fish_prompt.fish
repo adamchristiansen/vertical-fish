@@ -1,12 +1,12 @@
 function fish_prompt
   set -lx __vertical_exit_code $status
 
-  __vertical_util_set VERTICAL_COLOR_NORMAL normal
-  __vertical_util_set VERTICAL_NEWLINE      true
+  __vertical_util_set vertical_color_normal normal
+  __vertical_util_set vertical_newline      true
 
-  set_color $VERTICAL_COLOR_NORMAL
+  set_color $vertical_color_normal
 
-  if [ $VERTICAL_NEWLINE = true ]
+  if [ $vertical_newline = true ]
     echo
   end
 

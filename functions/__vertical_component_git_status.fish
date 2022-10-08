@@ -1,24 +1,24 @@
 function __vertical_component_git_status
-  __vertical_util_set VERTICAL_GIT_STATUS_COLOR         cyan --bold
-  __vertical_util_set VERTICAL_GIT_STATUS_PREFIX        ' ['
-  __vertical_util_set VERTICAL_GIT_STATUS_SHOW          true
-  __vertical_util_set VERTICAL_GIT_STATUS_SUFFIX        ']'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_ADDED     '+'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_AHEAD     '↑'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_BEHIND    '↓'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_DIVERGED  '⇵'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_DELETED   '-'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_MODIFIED  '!'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_RENAMED   '»'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_STASHED   '#'
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_UNMERGED  '='
-  __vertical_util_set VERTICAL_GIT_STATUS_SYM_UNTRACKED '?'
+  __vertical_util_set vertical_git_status_color         cyan --bold
+  __vertical_util_set vertical_git_status_prefix        ' ['
+  __vertical_util_set vertical_git_status_show          true
+  __vertical_util_set vertical_git_status_suffix        ']'
+  __vertical_util_set vertical_git_status_sym_added     '+'
+  __vertical_util_set vertical_git_status_sym_ahead     '↑'
+  __vertical_util_set vertical_git_status_sym_behind    '↓'
+  __vertical_util_set vertical_git_status_sym_diverged  '⇵'
+  __vertical_util_set vertical_git_status_sym_deleted   '-'
+  __vertical_util_set vertical_git_status_sym_modified  '!'
+  __vertical_util_set vertical_git_status_sym_renamed   '»'
+  __vertical_util_set vertical_git_status_sym_stashed   '#'
+  __vertical_util_set vertical_git_status_sym_unmerged  '='
+  __vertical_util_set vertical_git_status_sym_untracked '?'
 
   if not __vertical_util_is_git
     return
   end
 
-  if [ $VERTICAL_GIT_SHOW != true -o $VERTICAL_GIT_STATUS_SHOW != true ]
+  if [ $vertical_git_show != true -o $vertical_git_status_show != true ]
     return
   end
 
@@ -64,23 +64,23 @@ function __vertical_component_git_status
   end
 
   set -l status_syms (string join '' \
-    ([ $untracked = true ] && echo $VERTICAL_GIT_STATUS_SYM_UNTRACKED) \
-    ([ $added = true ] && echo $VERTICAL_GIT_STATUS_SYM_ADDED) \
-    ([ $deleted = true ] && echo $VERTICAL_GIT_STATUS_SYM_DELETED) \
-    ([ $modified = true ] && echo $VERTICAL_GIT_STATUS_SYM_MODIFIED) \
-    ([ $renamed = true ] && echo $VERTICAL_GIT_STATUS_SYM_RENAMED) \
-    ([ $stashed = true ] && echo $VERTICAL_GIT_STATUS_SYM_STASHED) \
-    ([ $unmerged = true ] && echo $VERTICAL_GIT_STATUS_SYM_UNMERGED) \
-    ([ $ahead = true ] && echo $VERTICAL_GIT_STATUS_SYM_AHEAD) \
-    ([ $behind = true ] && echo $VERTICAL_GIT_STATUS_SYM_BEHIND) \
-    ([ $diverged = true ] && echo $VERTICAL_GIT_STATUS_SYM_DIVERGED) \
+    ([ $untracked = true ] && echo $vertical_git_status_sym_untracked) \
+    ([ $added = true ] && echo $vertical_git_status_sym_added) \
+    ([ $deleted = true ] && echo $vertical_git_status_sym_deleted) \
+    ([ $modified = true ] && echo $vertical_git_status_sym_modified) \
+    ([ $renamed = true ] && echo $vertical_git_status_sym_renamed) \
+    ([ $stashed = true ] && echo $vertical_git_status_sym_stashed) \
+    ([ $unmerged = true ] && echo $vertical_git_status_sym_unmerged) \
+    ([ $ahead = true ] && echo $vertical_git_status_sym_ahead) \
+    ([ $behind = true ] && echo $vertical_git_status_sym_behind) \
+    ([ $diverged = true ] && echo $vertical_git_status_sym_diverged) \
   )
 
   if [ -n "$status_syms" ]
-    set_color $VERTICAL_GIT_STATUS_COLOR
-    echo -ens $VERTICAL_GIT_STATUS_PREFIX
+    set_color $vertical_git_status_color
+    echo -ens $vertical_git_status_prefix
     echo -ens $status_syms
-    echo -ens $VERTICAL_GIT_STATUS_SUFFIX
-    set_color $VERTICAL_COLOR_NORMAL
+    echo -ens $vertical_git_status_suffix
+    set_color $vertical_color_normal
   end
 end
