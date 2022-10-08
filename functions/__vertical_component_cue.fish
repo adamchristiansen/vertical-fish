@@ -4,4 +4,5 @@ function __vertical_component_cue
 
   set_color $vertical_cue_color
   echo -ens $vertical_cue
+  set_color normal
 end

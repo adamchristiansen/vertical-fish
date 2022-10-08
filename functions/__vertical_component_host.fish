@@ -12,4 +12,5 @@ function __vertical_component_host
   echo -ens $vertical_host_prefix
   set_color $vertical_host_color
   echo -ens (hostname)
+  set_color normal
 end

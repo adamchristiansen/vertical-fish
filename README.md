@@ -44,10 +44,10 @@ options.
 
 **General**
 
-| Option             | Default                                                         | Description                        |
-|--------------------|-----------------------------------------------------------------|------------------------------------|
-| `vertical_newline` | `true`                                                          | Insert a newline before the prompt |
-| `vertical_order`   | `jobs ssh user host dir git_branch git_status duration vi_mode` | Order to display components        |
+| Option             | Default                                                     | Description                        |
+|--------------------|-------------------------------------------------------------|------------------------------------|
+| `vertical_newline` | `true`                                                      | Insert a newline before the prompt |
+| `vertical_order`   | `jobs user host dir git_branch git_status duration vi_mode` | Order to display components        |
 
 **Cue**
 
@@ -123,15 +123,6 @@ The cue is displayed immediately before where the user types.
 | `vertical_jobs_prefix`       | `' '`         | Jobs prefix       |
 | `vertical_jobs_prefix_color` | `cyan --bold` | Jobs prefix color |
 | `vertical_jobs_sym`          | `●`           | Jobs symbol       |
-
-**SSH**
-
-| Option                      | Default       | Description      |
-|-----------------------------|---------------|------------------|
-| `vertical_ssh_color`        | `cyan --bold` | SSH color        |
-| `vertical_ssh_prefix`       | `' '`         | SSH prefix       |
-| `vertical_ssh_prefix_color` | `cyan --bold` | SSH prefix color |
-| `vertical_ssh_sym`          | `▲`           | SSH symbol       |
 
 **User**
 
