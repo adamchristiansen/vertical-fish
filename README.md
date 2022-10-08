@@ -90,6 +90,14 @@ will be set to the default value.
 | `VERTICAL_GIT_STATUS_SYM_UNMERGED`  | `=`              | Git unmerged status symbol.    |
 | `VERTICAL_GIT_STATUS_SYM_UNTRACKED` | `?`              | Git untracked status symbol.   |
 
+**Host**
+
+| Option                 | Default         | Description                            |
+|------------------------|-----------------|----------------------------------------|
+| `VERTICAL_HOST_COLOR`  | `yellow --bold` | Host indicator color.                  |
+| `VERTICAL_HOST_PREFIX` | `'@'`           | Host prefix.                           |
+| `VERTICAL_HOST_SHOW`   | `true`          | Show host (`true`, `false`, or `ssh`). |
+
 **Jobs**
 
 | Option                 | Default       | Description            |
@@ -107,6 +115,14 @@ will be set to the default value.
 | `VERTICAL_SSH_PREFIX` | `' '`         | SSH prefix.           |
 | `VERTICAL_SSH_SHOW`   | `true`        | Show SSH indicator.   |
 | `VERTICAL_SSH_SYM`    | `'▲'`         | SSH indicator symbol. |
+
+**User**
+
+| Option                 | Default         | Description                            |
+|------------------------|-----------------|----------------------------------------|
+| `VERTICAL_USER_COLOR`  | `yellow --bold` | User indicator color.                  |
+| `VERTICAL_USER_PREFIX` | `' '`           | User prefix.                           |
+| `VERTICAL_USER_SHOW`   | `true`          | Show user (`true`, `false`, or `ssh`). |
 
 **Vertical Bar**
 

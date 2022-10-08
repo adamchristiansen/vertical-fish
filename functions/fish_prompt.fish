@@ -13,6 +13,8 @@ function fish_prompt
   __vertical_component_vert
   __vertical_component_jobs
   __vertical_component_ssh
+  __vertical_component_user
+  __vertical_component_host
   __vertical_component_dir
   __vertical_component_git_branch
   __vertical_component_git_status
