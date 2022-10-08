@@ -13,11 +13,11 @@ function fish_prompt
     echo
   end
 
-  __vertical_component_vert
+  __vertical_component_vert top
   for component in $vertical_order
     eval __vertical_component_$component
   end
   echo
-  __vertical_component_vert
+  __vertical_component_vert bottom
   __vertical_component_cue
 end

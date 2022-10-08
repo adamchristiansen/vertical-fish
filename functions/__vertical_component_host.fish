@@ -1,7 +1,8 @@
 function __vertical_component_host
-  __vertical_util_set vertical_host_color  yellow --bold
-  __vertical_util_set vertical_host_prefix '@'
-  __vertical_util_set vertical_host_show   'ssh'
+  __vertical_util_set vertical_host_color        yellow --bold
+  __vertical_util_set vertical_host_prefix       @
+  __vertical_util_set vertical_host_prefix_color --bold
+  __vertical_util_set vertical_host_show         ssh
 
   if __vertical_util_is_ssh
     switch $vertical_host_show
@@ -19,7 +20,9 @@ function __vertical_component_host
     end
   end
 
+  set_color $vertical_host_prefix_color
+  echo -ens $vertical_host_prefix
   set_color $vertical_host_color
-  echo -ens $vertical_host_prefix (hostname)
+  echo -ens (hostname)
   set_color $vertical_color_normal
 end

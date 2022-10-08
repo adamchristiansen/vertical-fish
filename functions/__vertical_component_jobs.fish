@@ -1,8 +1,9 @@
 function __vertical_component_jobs
-  __vertical_util_set vertical_jobs_color  cyan --bold
-  __vertical_util_set vertical_jobs_prefix ' '
-  __vertical_util_set vertical_jobs_show   true
-  __vertical_util_set vertical_jobs_sym    '●'
+  __vertical_util_set vertical_jobs_color        cyan --bold
+  __vertical_util_set vertical_jobs_prefix       ' '
+  __vertical_util_set vertical_jobs_prefix_color cyan --bold
+  __vertical_util_set vertical_jobs_show         true
+  __vertical_util_set vertical_jobs_sym          ●
 
   if [ $vertical_jobs_show != true ]
     return
@@ -12,7 +13,9 @@ function __vertical_component_jobs
     return
   end
 
+  set_color $vertical_jobs_prefix_color
+  echo -ens $vertical_jobs_prefix
   set_color $vertical_jobs_color
-  echo -ens $vertical_jobs_prefix $vertical_jobs_sym
+  echo -ens $vertical_jobs_sym
   set_color $vertical_color_normal
 end

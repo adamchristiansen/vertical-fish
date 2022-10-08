@@ -1,5 +1,7 @@
 function __vertical_component_vi_mode
   __vertical_util_set vertical_vi_mode_color           yellow --bold
+  __vertical_util_set vertical_vi_mode_prefix          ''
+  __vertical_util_set vertical_vi_mode_prefix_color    yellow --bold
   __vertical_util_set vertical_vi_mode_show            true
   __vertical_util_set vertical_vi_mode_sym_insert      ''
   __vertical_util_set vertical_vi_mode_sym_normal      ' (N)'
@@ -15,6 +17,8 @@ function __vertical_component_vi_mode
     return
   end
 
+  set_color $vertical_vi_mode_prefix_color
+  echo -ens $vertical_vi_mode_prefix
   set_color $vertical_vi_mode_color
   switch $fish_bind_mode
     case insert;      echo -ens $vertical_vi_mode_sym_insert

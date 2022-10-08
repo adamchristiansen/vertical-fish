@@ -1,8 +1,9 @@
 function __vertical_component_duration
-  __vertical_util_set vertical_duration_color  yellow --bold
-  __vertical_util_set vertical_duration_min    5000
-  __vertical_util_set vertical_duration_prefix ' '
-  __vertical_util_set vertical_duration_show   true
+  __vertical_util_set vertical_duration_color        yellow --bold
+  __vertical_util_set vertical_duration_min          5000
+  __vertical_util_set vertical_duration_prefix       ' '
+  __vertical_util_set vertical_duration_prefix_color yellow --bold
+  __vertical_util_set vertical_duration_show         true
 
   if [ $vertical_duration_show != true ]
     return
@@ -43,6 +44,7 @@ function __vertical_component_duration
     end
   end
 
+  set_color $vertical_duration_prefix_color
   echo -ens $vertical_duration_prefix
   set_color $vertical_duration_color
   echo -ens (string join ' ' $dur)
