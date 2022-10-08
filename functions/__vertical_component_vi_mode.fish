@@ -1,12 +1,12 @@
 function __vertical_component_vi_mode
-  __vertical_util_set VERTICAL_VI_MODE_COLOR           yellow --bold
-  __vertical_util_set VERTICAL_VI_MODE_SHOW            true
-  __vertical_util_set VERTICAL_VI_MODE_SYM_INSERT      ''
-  __vertical_util_set VERTICAL_VI_MODE_SYM_NORMAL      ' (N)'
-  __vertical_util_set VERTICAL_VI_MODE_SYM_REPLACE_ONE ' (R)'
-  __vertical_util_set VERTICAL_VI_MODE_SYM_VISUAL      ' (V)'
+  __vertical_util_set vertical_vi_mode_color           yellow --bold
+  __vertical_util_set vertical_vi_mode_show            true
+  __vertical_util_set vertical_vi_mode_sym_insert      ''
+  __vertical_util_set vertical_vi_mode_sym_normal      ' (N)'
+  __vertical_util_set vertical_vi_mode_sym_replace_one ' (R)'
+  __vertical_util_set vertical_vi_mode_sym_visual      ' (V)'
 
-  if [ $VERTICAL_VI_MODE_SHOW != true ]
+  if [ $vertical_vi_mode_show != true ]
     return
   end
 
@@ -15,12 +15,12 @@ function __vertical_component_vi_mode
     return
   end
 
-  set_color $VERTICAL_VI_MODE_COLOR
+  set_color $vertical_vi_mode_color
   switch $fish_bind_mode
-    case insert;      echo -ens $VERTICAL_VI_MODE_SYM_INSERT
-    case default;     echo -ens $VERTICAL_VI_MODE_SYM_NORMAL
-    case replace_one; echo -ens $VERTICAL_VI_MODE_SYM_REPLACE_ONE
-    case visual;      echo -ens $VERTICAL_VI_MODE_SYM_VISUAL
+    case insert;      echo -ens $vertical_vi_mode_sym_insert
+    case default;     echo -ens $vertical_vi_mode_sym_normal
+    case replace_one; echo -ens $vertical_vi_mode_sym_replace_one
+    case visual;      echo -ens $vertical_vi_mode_sym_visual
   end
-  set_color $VERTICAL_COLOR_NORMAL
+  set_color $vertical_color_normal
 end
