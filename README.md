@@ -50,6 +50,7 @@ still be used.
 |--------------------|-------------------------------------------------------------|------------------------------------|
 | `vertical_newline` | `true`                                                      | Insert a newline before the prompt |
 | `vertical_order`   | `jobs user host dir git_branch git_status duration vi_mode` | Order to display components        |
+| `vertical_version` | `1.0.0`                                                     | Current version                    |
 
 ### Cue
 

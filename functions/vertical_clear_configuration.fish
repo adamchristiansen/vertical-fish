@@ -43,6 +43,7 @@ function vertical_clear_configuration -d 'Clear vertical prompt configuration'
   set -eU vertical_user_prefix
   set -eU vertical_user_prefix_color
   set -eU vertical_user_ssh_only
+  set -eU vertical_version
   set -eU vertical_vert_bottom
   set -eU vertical_vert_color_failure
   set -eU vertical_vert_color_success
