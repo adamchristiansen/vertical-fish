@@ -2,22 +2,10 @@ function __vertical_component_user
   __vertical_util_set vertical_user_color        yellow --bold
   __vertical_util_set vertical_user_prefix       ' '
   __vertical_util_set vertical_user_prefix_color yellow --bold
-  __vertical_util_set vertical_user_show         ssh
+  __vertical_util_set vertical_user_ssh_only     true
 
-  if __vertical_util_is_ssh
-    switch $vertical_host_show
-    case 'true' 'ssh'
-      # Do nothing
-    case 'false' '*'
-      return
-    end
-  else
-    switch $vertical_host_show
-    case 'true'
-      # Do nothing
-    case 'false' 'ssh' '*'
-      return
-    end
+  if not __vertical_util_is_ssh && [ $vertical_user_ssh_only = true ]
+    return
   end
 
   set_color $vertical_user_prefix_color

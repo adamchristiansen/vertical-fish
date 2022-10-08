@@ -3,11 +3,6 @@ function __vertical_component_duration
   __vertical_util_set vertical_duration_min          5000
   __vertical_util_set vertical_duration_prefix       ' '
   __vertical_util_set vertical_duration_prefix_color yellow --bold
-  __vertical_util_set vertical_duration_show         true
-
-  if [ $vertical_duration_show != true ]
-    return
-  end
 
   if [ $CMD_DURATION -lt $vertical_duration_min ]
     return

@@ -2,12 +2,7 @@ function __vertical_component_jobs
   __vertical_util_set vertical_jobs_color        cyan --bold
   __vertical_util_set vertical_jobs_prefix       ' '
   __vertical_util_set vertical_jobs_prefix_color cyan --bold
-  __vertical_util_set vertical_jobs_show         true
   __vertical_util_set vertical_jobs_sym          ●
-
-  if [ $vertical_jobs_show != true ]
-    return
-  end
 
   if [ (jobs | count) -eq 0 ]
     return
