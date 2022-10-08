@@ -44,11 +44,10 @@ options.
 
 **General**
 
-| Option                  | Default                                                         | Description                        |
-|-------------------------|-----------------------------------------------------------------|------------------------------------|
-| `vertical_color_normal` | `normal`                                                        | Default color                      |
-| `vertical_newline`      | `true`                                                          | Insert a newline before the prompt |
-| `vertical_order`        | `jobs ssh user host dir git_branch git_status duration vi_mode` | Order to display components        |
+| Option             | Default                                                         | Description                        |
+|--------------------|-----------------------------------------------------------------|------------------------------------|
+| `vertical_newline` | `true`                                                          | Insert a newline before the prompt |
+| `vertical_order`   | `jobs ssh user host dir git_branch git_status duration vi_mode` | Order to display components        |
 
 **Cue**
 

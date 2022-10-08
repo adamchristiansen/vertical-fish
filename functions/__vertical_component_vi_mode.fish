@@ -21,5 +21,4 @@ function __vertical_component_vi_mode
     case replace_one; echo -ens $vertical_vi_mode_sym_replace_one
     case visual;      echo -ens $vertical_vi_mode_sym_visual
   end
-  set_color $vertical_color_normal
 end

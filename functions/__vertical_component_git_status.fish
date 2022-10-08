@@ -80,6 +80,5 @@ function __vertical_component_git_status
     echo -ens $status_syms
     set_color $vertical_git_status_suffix_color
     echo -ens $vertical_git_status_suffix
-    set_color $vertical_color_normal
   end
 end
