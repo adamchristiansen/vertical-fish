@@ -12,5 +12,4 @@ function __vertical_component_user
   echo -ens $vertical_user_prefix
   set_color $vertical_user_color
   echo -ens $USER
-  set_color $vertical_color_normal
 end

@@ -12,5 +12,4 @@ function __vertical_component_git_branch
   echo -ens $vertical_git_branch_prefix
   set_color $vertical_git_branch_color
   echo -ens $branch
-  set_color $vertical_color_normal
 end

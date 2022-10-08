@@ -12,5 +12,4 @@ function __vertical_component_ssh
   echo -ens $vertical_ssh_prefix
   set_color $vertical_ssh_color
   echo -ens $vertical_ssh_sym
-  set_color $vertical_color_normal
 end

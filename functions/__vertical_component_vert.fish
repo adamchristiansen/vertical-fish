@@ -10,11 +10,5 @@ function __vertical_component_vert -a position
     set_color $vertical_vert_color_failure
   end
 
-  switch $position
-  case bottom
-    echo -ens $vertical_vert_bottom
-  case top '*'
-    echo -ens $vertical_vert_top
-  end
-  set_color $vertical_color_normal
+  eval "echo -ens \$vertical_vert_$position"
 end

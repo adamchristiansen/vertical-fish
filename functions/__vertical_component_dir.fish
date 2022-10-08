@@ -26,5 +26,4 @@ function __vertical_component_dir
   echo -ens $vertical_dir_prefix
   set_color $vertical_dir_color
   echo -ens $dir
-  set_color $vertical_color_normal
 end

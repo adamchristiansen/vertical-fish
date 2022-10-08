@@ -43,5 +43,4 @@ function __vertical_component_duration
   echo -ens $vertical_duration_prefix
   set_color $vertical_duration_color
   echo -ens (string join ' ' $dur)
-  set_color $vertical_color_normal
 end
