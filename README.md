@@ -87,23 +87,24 @@ The cue is displayed immediately before where the user types.
 
 **Git Status**
 
-| Option                              | Default       | Description                 |
-|-------------------------------------|---------------|-----------------------------|
-| `vertical_git_status_color`         | `cyan --bold` | Git status color            |
-| `vertical_git_status_prefix`        | `' ['`        | Git status prefix           |
-| `vertical_git_status_prefix_color`  | `cyan --bold` | Git status prefix color     |
-| `vertical_git_status_suffix`        | `]`           | Git status suffix           |
-| `vertical_git_status_suffix_color`  | `cyan --bold` | Git status suffix color     |
-| `vertical_git_status_sym_added`     | `+`           | Git added status symbol     |
-| `vertical_git_status_sym_ahead`     | `↑`           | Git ahead status symbol     |
-| `vertical_git_status_sym_behind`    | `↓`           | Git behind stymbol          |
-| `vertical_git_status_sym_diverged`  | `⇵`           | Git divstatus symbol        |
-| `vertical_git_status_sym_deleted`   | `-`           | Geted status symbol         |
-| `vertical_git_status_sym_modified`  | `!`           | Git modified status symbol  |
-| `vertical_git_status_sym_renamed`   | `»`           | Git renamed status symbol   |
-| `vertical_git_status_sym_stashed`   | `#`           | Git stashed status symbol   |
-| `vertical_git_status_sym_unmerged`  | `=`           | Git unmerged status symbol  |
-| `vertical_git_status_sym_untracked` | `?`           | Git untracked status symbol |
+| Option                                  | Default       | Description                         |
+|-----------------------------------------|---------------|-------------------------------------|
+| `vertical_git_status_color`             | `cyan --bold` | Git status color                    |
+| `vertical_git_status_prefix`            | `' ['`        | Git status prefix                   |
+| `vertical_git_status_prefix_color`      | `cyan --bold` | Git status prefix color             |
+| `vertical_git_status_suffix`            | `]`           | Git status suffix                   |
+| `vertical_git_status_suffix_color`      | `cyan --bold` | Git status suffix color             |
+| `vertical_git_status_sym_added`         | `+`           | Git added status symbol             |
+| `vertical_git_status_sym_added_deleted` | `±`           | Git added and deleted status symbol |
+| `vertical_git_status_sym_ahead`         | `↑`           | Git ahead status symbol             |
+| `vertical_git_status_sym_behind`        | `↓`           | Git behind stymbol                  |
+| `vertical_git_status_sym_diverged`      | `↕`           | Git diverged status symbol          |
+| `vertical_git_status_sym_deleted`       | `-`           | Get deleted status symbol           |
+| `vertical_git_status_sym_modified`      | `•`           | Git modified status symbol          |
+| `vertical_git_status_sym_renamed`       | `‣`           | Git renamed status symbol           |
+| `vertical_git_status_sym_stashed`       | `#`           | Git stashed status symbol           |
+| `vertical_git_status_sym_unmerged`      | `=`           | Git unmerged status symbol          |
+| `vertical_git_status_sym_untracked`     | `?`           | Git untracked status symbol         |
 
 **Host**
 
