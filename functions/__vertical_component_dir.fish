@@ -1,8 +1,9 @@
 function __vertical_component_dir
-  __vertical_util_set vertical_dir_color      blue --bold
-  __vertical_util_set vertical_dir_prefix     ' '
-  __vertical_util_set vertical_dir_trunc_git  true
-  __vertical_util_set vertical_dir_trunc_home true
+  __vertical_util_set vertical_dir_color        blue --bold
+  __vertical_util_set vertical_dir_prefix       ' '
+  __vertical_util_set vertical_dir_prefix_color blue --bold
+  __vertical_util_set vertical_dir_trunc_git    true
+  __vertical_util_set vertical_dir_trunc_home   true
 
   set -l dir
   if [ $vertical_dir_trunc_git = true ] && __vertical_util_is_git
@@ -21,7 +22,9 @@ function __vertical_component_dir
     set dir $PWD
   end
 
+  set_color $vertical_dir_prefix_color
+  echo -ens $vertical_dir_prefix
   set_color $vertical_dir_color
-  echo -ens $vertical_dir_prefix $dir
+  echo -ens $dir
   set_color $vertical_color_normal
 end

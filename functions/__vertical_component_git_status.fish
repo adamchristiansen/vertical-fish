@@ -1,17 +1,19 @@
 function __vertical_component_git_status
   __vertical_util_set vertical_git_status_color         cyan --bold
   __vertical_util_set vertical_git_status_prefix        ' ['
+  __vertical_util_set vertical_git_status_prefix_color  cyan --bold
   __vertical_util_set vertical_git_status_show          true
-  __vertical_util_set vertical_git_status_suffix        ']'
-  __vertical_util_set vertical_git_status_sym_added     '+'
-  __vertical_util_set vertical_git_status_sym_ahead     '↑'
-  __vertical_util_set vertical_git_status_sym_behind    '↓'
-  __vertical_util_set vertical_git_status_sym_diverged  '⇵'
-  __vertical_util_set vertical_git_status_sym_deleted   '-'
-  __vertical_util_set vertical_git_status_sym_modified  '!'
-  __vertical_util_set vertical_git_status_sym_renamed   '»'
+  __vertical_util_set vertical_git_status_suffix        ]
+  __vertical_util_set vertical_git_status_suffix_color  cyan --bold
+  __vertical_util_set vertical_git_status_sym_added     +
+  __vertical_util_set vertical_git_status_sym_ahead     ↑
+  __vertical_util_set vertical_git_status_sym_behind    ↓
+  __vertical_util_set vertical_git_status_sym_deleted   -
+  __vertical_util_set vertical_git_status_sym_diverged  ⇵
+  __vertical_util_set vertical_git_status_sym_modified  !
+  __vertical_util_set vertical_git_status_sym_renamed   »
   __vertical_util_set vertical_git_status_sym_stashed   '#'
-  __vertical_util_set vertical_git_status_sym_unmerged  '='
+  __vertical_util_set vertical_git_status_sym_unmerged  =
   __vertical_util_set vertical_git_status_sym_untracked '?'
 
   if not __vertical_util_is_git
@@ -77,9 +79,11 @@ function __vertical_component_git_status
   )
 
   if [ -n "$status_syms" ]
-    set_color $vertical_git_status_color
+    set_color $vertical_git_status_prefix_color
     echo -ens $vertical_git_status_prefix
+    set_color $vertical_git_status_color
     echo -ens $status_syms
+    set_color $vertical_git_status_suffix_color
     echo -ens $vertical_git_status_suffix
     set_color $vertical_color_normal
   end
