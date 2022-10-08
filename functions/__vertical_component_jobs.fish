@@ -12,4 +12,5 @@ function __vertical_component_jobs
   echo -ens $vertical_jobs_prefix
   set_color $vertical_jobs_color
   echo -ens $vertical_jobs_sym
+  set_color normal
 end

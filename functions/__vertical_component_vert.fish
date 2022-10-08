@@ -11,4 +11,5 @@ function __vertical_component_vert -a position
   end
 
   eval "echo -ens \$vertical_vert_$position"
+  set_color normal
 end

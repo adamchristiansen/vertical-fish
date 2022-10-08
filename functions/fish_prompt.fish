@@ -2,7 +2,7 @@ function fish_prompt
   set -lx __vertical_exit_code $status
 
   __vertical_util_set vertical_newline true
-  __vertical_util_set vertical_order   jobs ssh user host dir git_branch \
+  __vertical_util_set vertical_order   jobs user host dir git_branch \
                                        git_status duration vi_mode
 
   if [ $vertical_newline = true ]
