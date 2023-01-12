@@ -7,7 +7,9 @@ function __vertical_component_git_branch
     return
   end
 
-  set -l branch (command git symbolic-ref --short HEAD 2> /dev/null)
+  set -l branch (command git describe --tags --exact-match 2> /dev/null \
+    || command git symbolic-ref -q --short HEAD \
+    || command git rev-parse --short HEAD)
   set_color $vertical_git_branch_prefix_color
   echo -ens $vertical_git_branch_prefix
   set_color $vertical_git_branch_color
