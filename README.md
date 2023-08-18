@@ -58,8 +58,8 @@ The cue is displayed immediately before where the user types.
 
 | Option                    | Default  | Description |
 |---------------------------|----------|-------------|
-| `vertical_vert_cue`       | `' '`    | Cue text    |
-| `vertical_vert_cue_color` | `normal` | Cue color   |
+| `vertical_cue`            | `' '`    | Cue text    |
+| `vertical_cue_color`      | `normal` | Cue color   |
 
 ### Directory
 
