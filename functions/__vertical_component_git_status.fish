@@ -36,12 +36,12 @@ function __vertical_component_git_status
   set -l git_status_first (string split \n $git_status)[1]
 
   for s in (string split \n $git_status | string sub -s 1 -l 2)
-    string match -q '*A*'  $s && set added     true
-    string match -q '*D*'  $s && set deleted   true
-    string match -q '*M*'  $s && set modified  true
-    string match -q '*R*'  $s && set renamed   true
-    string match -q '*U*'  $s && set unmerged  true
-    string match -q '*\?*' $s && set untracked true
+    string match -q '*A*' $s && set added     true
+    string match -q '*D*' $s && set deleted   true
+    string match -q '*M*' $s && set modified  true
+    string match -q '*R*' $s && set renamed   true
+    string match -q '*U*' $s && set unmerged  true
+    string match -q '*?*' $s && set untracked true
   end
 
   if [ $added = true ] && [ $deleted = true ]
